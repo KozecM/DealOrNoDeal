@@ -3,6 +3,12 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+module.exports = {
+  devServer: {
+    disableHostCheck: true
+  }
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -13,10 +19,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
-})
 
-module.exports = {
-  devServer: {
-    disableHostCheck: true
-  }
-}
+})
