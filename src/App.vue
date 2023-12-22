@@ -218,7 +218,7 @@ header {
     color: gold;
     height: 4rem;
     width: auto;
-    font_size: 80px;
+    font-size: 80px;
   }
 }
 </style>
